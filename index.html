@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dmitrii Tolstikhin — Founder of H2 Element | Vibe coding &amp; automation</title>
+<meta name="description" content="Dmitrii Tolstikhin — founder of H2 Element. Building real products with AI on operations. Follow along: in Russian on Telegram or in English by email." />
+<meta name="color-scheme" content="dark" />
+<meta property="og:title" content="Dmitrii Tolstikhin — Founder of H2 Element" />
+<meta property="og:description" content="One person, run like a whole company. Build-in-public on AI, hardware, and automation." />
+<meta property="og:type" content="profile" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#0F1115; --surface:#16191F; --text:#F5F2EC; --muted:#B8B2A7;
+    --amber:#D97706; --amber-bright:#F59E0B; --on-amber:#0F1115;
+    --error:#FCA5A5; --border:#2A2E36; --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:"Geist",system-ui,sans-serif; font-size:17px; line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    display:flex; flex-direction:column; min-height:100vh; align-items:center;
+    padding:32px 20px;
+  }
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  a.skip{position:absolute;left:-9999px;top:0;background:var(--amber);color:var(--on-amber);padding:10px 16px;border-radius:0 0 8px 0;z-index:10}
+  a.skip:focus{left:0}
+  .wrap{width:100%;max-width:520px;margin:auto}
+  header{text-align:center;margin-bottom:28px}
+  .mono{
+    width:84px;height:84px;border-radius:50%;margin:0 auto 18px;
+    display:grid;place-items:center;
+    border:2px solid var(--amber); color:var(--text);
+    font-family:"Fraunces",serif;font-weight:600;font-size:30px;letter-spacing:1px;
+    background:var(--surface);
+  }
+  h1{font-family:"Fraunces",serif;font-weight:600;font-size:28px;line-height:1.2;margin:0 0 8px}
+  .role{font-size:15px;color:var(--muted);margin:0 0 14px}
+  .thesis{font-size:15px;color:var(--text);margin:0 auto;max-width:42ch;border-top:1px solid var(--border);padding-top:14px}
+  main:focus{outline:none}
+  main:focus-visible{outline:none;box-shadow:none}
+  .label{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:26px 0 10px}
+  ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .btn,.link{display:flex;align-items:center;gap:12px;min-height:52px;padding:13px 18px;border-radius:var(--radius);background:var(--surface);color:var(--text);text-decoration:none;border:1px solid var(--border);font-size:16px;font-weight:500}
+  .btn .meta,.link .meta{margin-left:auto;color:var(--muted);font-size:13px;font-family:"JetBrains Mono",monospace}
+  .btn-primary{background:var(--amber);color:var(--on-amber);border-color:var(--amber);font-weight:600}
+  .btn-primary .meta{color:var(--on-amber)}
+  a:hover,button:hover{border-color:var(--amber)}
+  .btn-primary:hover{filter:brightness(1.06)}
+  a:focus-visible,button:focus-visible,input:focus-visible{outline:none;box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--amber-bright)}
+  form{display:flex;flex-direction:column;gap:10px}
+  .field-label{font-size:15px;color:var(--text)}
+  input[type=email]{width:100%;min-height:52px;padding:13px 16px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--amber);color:var(--text);font-family:"Geist",sans-serif;font-size:16px}
+  input[type=email]::placeholder{color:var(--muted)}
+  input[aria-invalid=true]{border-color:var(--error)}
+  button[type=submit]{min-height:52px;border-radius:var(--radius);cursor:pointer;background:var(--amber);color:var(--on-amber);border:1px solid var(--amber);font-family:"Geist",sans-serif;font-size:16px;font-weight:600}
+  .status{font-size:14px;color:var(--muted);min-height:1.2em}
+  .status.ok{color:var(--amber-bright)}
+  .status.err{color:var(--error)}
+  footer{margin-top:30px;text-align:center;font-size:13px;color:var(--muted)}
+  footer a{color:var(--muted)}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <header>
+    <div class="mono" aria-hidden="true">DT</div>
+    <h1>Dmitrii Tolstikhin</h1>
+    <p class="role">Founder of H2 Element · Vibe coding &amp; business process automation</p>
+    <p class="thesis">One person can run like a whole company by putting AI on operations. I prove it on real products - no hype, numbers you can verify.</p>
+  </header>
+  <main id="main" tabindex="-1">
+    <h2 class="label">Follow the build</h2>
+    <ul>
+      <li>
+        <a class="btn btn-primary" href="https://t.me/dtolstoi" target="_blank" rel="noopener noreferrer">
+          <span lang="ru">Телеграм-канал - на русском</span>
+          <span class="meta" aria-hidden="true">RU</span>
+          <span class="sr-only">Russian-language Telegram channel (opens Telegram in a new tab)</span>
+        </a>
+      </li>
+    </ul>
+    <h2 class="label">Get updates by email - in English</h2>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfgpLXmC3VneFESPciAEq1E3eqzO8yFSlthVk6FJgRx3GxUFg/formResponse" method="post" target="hidden-iframe" novalidate>
+      <label class="field-label" for="email">Your email <span aria-hidden="true">(required)</span></label>
+      <input id="email" name="emailAddress" type="email" inputmode="email" autocomplete="email" placeholder="you@company.com" required aria-describedby="email-status" />
+      <button type="submit">Join the list</button>
+      <p class="status" id="email-status" role="status" aria-live="polite"></p>
+    </form>
+    <iframe name="hidden-iframe" title="Email submission target" class="sr-only" tabindex="-1"></iframe>
+    <h2 class="label">Elsewhere</h2>
+    <nav aria-label="Profiles and ventures">
+      <ul>
+        <li><a class="link" href="https://www.linkedin.com/in/dmitriitolstoi" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (opens in a new tab)</span><span class="meta" aria-hidden="true">B2B</span></a></li>
+        <li><a class="link" href="https://www.instagram.com/d.tolstoi_llc" target="_blank" rel="noopener noreferrer">Instagram<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a class="link" href="https://h2element.works/?utm_source=linkhub&amp;utm_medium=bio&amp;utm_campaign=h2_flagship" target="_blank" rel="noopener noreferrer">H2 Element - hydrogen for diesel trucks<span class="sr-only"> (opens in a new tab)</span></a></li>
+      </ul>
+    </nav>
+  </main>
+  <footer>
+    <p>Built in public. <a href="https://github.com/tolstihindmitry-ops/dtolstoi-hub" target="_blank" rel="noopener noreferrer">Source on GitHub<span class="sr-only"> (opens in a new tab)</span></a></p>
+  </footer>
+</div>
+<script>
+  var emailForm = document.querySelector('form');
+  var statusEl = document.getElementById('email-status');
+  var emailInput = document.getElementById('email');
+  if (emailForm) {
+    emailForm.addEventListener('submit', function (e) {
+      // The Google Form POST goes into an opaque iframe; we can't read its result,
+      // so gate the optimistic success on client-side validity and announce real errors.
+      if (!emailInput.checkValidity()) {
+        e.preventDefault();
+        statusEl.classList.remove('ok');
+        statusEl.classList.add('err');
+        statusEl.textContent = "Please enter a valid email address.";
+        emailInput.setAttribute('aria-invalid', 'true');
+        emailInput.focus();
+        return;
+      }
+      emailInput.removeAttribute('aria-invalid');
+      setTimeout(function () {
+        statusEl.classList.remove('err');
+        statusEl.classList.add('ok');
+        statusEl.textContent = "Thanks - you're on the list.";
+        emailInput.value = '';
+      }, 300);
+    });
+  }
+</script>
+</body>
+</html>
