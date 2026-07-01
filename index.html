@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Dmitrii Tolstikhin — Founder of H2 Element | Vibe coding &amp; automation</title>
-<meta name="description" content="Dmitrii Tolstikhin — founder of H2 Element. Building real products with AI on operations. Follow along: in Russian on Telegram or in English by email." />
+<title>Dmitrii Tolstikhin — Founder | Building real products with AI</title>
+<meta name="description" content="Dmitrii Tolstikhin — founder building real products with AI on operations: Sneaky, Signal Trader, H2 Element. Follow the build." />
 <meta name="color-scheme" content="dark" />
-<meta property="og:title" content="Dmitrii Tolstikhin — Founder of H2 Element" />
+<meta property="og:title" content="Dmitrii Tolstikhin — Founder" />
 <meta property="og:description" content="One person, run like a whole company. Build-in-public on AI, hardware, and automation." />
 <meta property="og:type" content="profile" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,6 +19,7 @@
     --error:#FCA5A5; --border:#2A2E36; --radius:14px;
   }
   *{box-sizing:border-box}
+  [hidden]{display:none!important}
   html{-webkit-text-size-adjust:100%}
   body{
     margin:0; background:var(--bg); color:var(--text);
@@ -53,6 +54,11 @@
   a:hover,button:hover{border-color:var(--amber)}
   .btn-primary:hover{filter:brightness(1.06)}
   a:focus-visible,button:focus-visible,input:focus-visible{outline:none;box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--amber-bright)}
+  /* Disclosure (collapsible social profiles) */
+  button.link{width:100%;font-family:"Geist",sans-serif;text-align:left;cursor:pointer}
+  .disclosure .chevron{transition:transform .18s ease}
+  .disclosure[aria-expanded="true"] .chevron{transform:rotate(180deg)}
+  .submenu{margin-top:10px}
   form{display:flex;flex-direction:column;gap:10px}
   .field-label{font-size:15px;color:var(--text)}
   input[type=email]{width:100%;min-height:52px;padding:13px 16px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--amber);color:var(--text);font-family:"Geist",sans-serif;font-size:16px}
@@ -73,21 +79,45 @@
   <header>
     <div class="mono" aria-hidden="true">DT</div>
     <h1>Dmitrii Tolstikhin</h1>
-    <p class="role">Founder of H2 Element · Vibe coding &amp; business process automation</p>
+    <p class="role">Founder · Vibe coding &amp; business process automation</p>
     <p class="thesis">One person can run like a whole company by putting AI on operations. I prove it on real products - no hype, numbers you can verify.</p>
   </header>
   <main id="main" tabindex="-1">
-    <h2 class="label">Follow the build</h2>
+    <h2 class="label">Products</h2>
     <ul>
       <li>
-        <a class="btn btn-primary" href="https://t.me/signal_trader_AI" target="_blank" rel="noopener noreferrer">
-          <span lang="ru">Телеграм-сообщество - на русском</span>
-          <span class="meta" aria-hidden="true">RU</span>
-          <span class="sr-only">Russian-language Telegram community (opens Telegram in a new tab)</span>
+        <a class="btn btn-primary" href="https://getsneaky.app/?utm_source=linkhub&amp;utm_medium=bio&amp;utm_campaign=sneaky" target="_blank" rel="noopener noreferrer">
+          Sneaky - X-ray for viral short videos
+          <span class="meta" aria-hidden="true">APP</span>
+          <span class="sr-only">(opens in a new tab)</span>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://signaltrader.works/?utm_source=linkhub&amp;utm_medium=bio&amp;utm_campaign=signaltrader" target="_blank" rel="noopener noreferrer">
+          Signal Trader - AI signals for traders
+          <span class="sr-only">(opens in a new tab)</span>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://h2element.works/?utm_source=linkhub&amp;utm_medium=bio&amp;utm_campaign=h2_flagship" target="_blank" rel="noopener noreferrer">
+          H2 Element - hydrogen for diesel trucks
+          <span class="sr-only">(opens in a new tab)</span>
         </a>
       </li>
     </ul>
-    <h2 class="label">Get updates by email - in English</h2>
+
+    <h2 class="label">Follow the build</h2>
+    <ul>
+      <li>
+        <a class="link" href="https://t.me/signal_trader_AI" target="_blank" rel="noopener noreferrer">
+          Join us on Telegram
+          <span class="meta" aria-hidden="true">TG</span>
+          <span class="sr-only">(opens in a new tab)</span>
+        </a>
+      </li>
+    </ul>
+
+    <h2 class="label">Get updates by email</h2>
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSfgpLXmC3VneFESPciAEq1E3eqzO8yFSlthVk6FJgRx3GxUFg/formResponse" method="post" target="hidden-iframe" novalidate>
       <label class="field-label" for="email">Your email <span aria-hidden="true">(required)</span></label>
       <input id="email" name="emailAddress" type="email" inputmode="email" autocomplete="email" placeholder="you@company.com" required aria-describedby="email-status" />
@@ -95,18 +125,23 @@
       <p class="status" id="email-status" role="status" aria-live="polite"></p>
     </form>
     <iframe name="hidden-iframe" title="Email submission target" class="sr-only" tabindex="-1"></iframe>
+
     <h2 class="label">Elsewhere</h2>
-    <nav aria-label="Profiles and ventures">
-      <ul>
-        <li><a class="link" href="https://www.linkedin.com/in/dmitriitolstoi" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (opens in a new tab)</span><span class="meta" aria-hidden="true">B2B</span></a></li>
-        <li><a class="link" href="https://x.com/67j84uybik0dvvw" target="_blank" rel="noopener noreferrer">X<span class="sr-only"> (opens in a new tab)</span></a></li>
-        <li><a class="link" href="https://www.instagram.com/d.tolstoi_llc" target="_blank" rel="noopener noreferrer">Instagram<span class="sr-only"> (opens in a new tab)</span></a></li>
-        <li><a class="link" href="https://www.tiktok.com/@d.tolstoi" target="_blank" rel="noopener noreferrer">TikTok<span class="sr-only"> (opens in a new tab)</span></a></li>
-        <li><a class="link" href="https://www.facebook.com/dima.tolstihin" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a></li>
-        <li><a class="link" href="https://h2element.works/?utm_source=linkhub&amp;utm_medium=bio&amp;utm_campaign=h2_flagship" target="_blank" rel="noopener noreferrer">H2 Element - hydrogen for diesel trucks<span class="sr-only"> (opens in a new tab)</span></a></li>
-        <li><a class="link" href="https://getsneaky.app/?utm_source=linkhub&amp;utm_medium=bio&amp;utm_campaign=sneaky" target="_blank" rel="noopener noreferrer">Sneaky - X-ray for viral short videos<span class="sr-only"> (opens in a new tab)</span><span class="meta" aria-hidden="true">APP</span></a></li>
-      </ul>
-    </nav>
+    <ul>
+      <li>
+        <button type="button" class="link disclosure" id="socials-btn" aria-expanded="false" aria-controls="socials-list">
+          Social profiles
+          <span class="meta chevron" aria-hidden="true">▾</span>
+        </button>
+        <ul id="socials-list" class="submenu" hidden>
+          <li><a class="link" href="https://www.linkedin.com/in/dmitriitolstoi" target="_blank" rel="noopener noreferrer">LinkedIn<span class="meta" aria-hidden="true">B2B</span><span class="sr-only"> (opens in a new tab)</span></a></li>
+          <li><a class="link" href="https://x.com/67j84uybik0dvvw" target="_blank" rel="noopener noreferrer">X<span class="sr-only"> (opens in a new tab)</span></a></li>
+          <li><a class="link" href="https://www.instagram.com/d.tolstoi_llc" target="_blank" rel="noopener noreferrer">Instagram<span class="sr-only"> (opens in a new tab)</span></a></li>
+          <li><a class="link" href="https://www.tiktok.com/@d.tolstoi" target="_blank" rel="noopener noreferrer">TikTok<span class="sr-only"> (opens in a new tab)</span></a></li>
+          <li><a class="link" href="https://www.facebook.com/dima.tolstihin" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a></li>
+        </ul>
+      </li>
+    </ul>
   </main>
   <footer>
     <p>Built in public. <a href="https://github.com/tolstihindmitry-ops/dtolstoi-hub" target="_blank" rel="noopener noreferrer">Source on GitHub<span class="sr-only"> (opens in a new tab)</span></a></p>
@@ -137,6 +172,31 @@
         emailInput.value = '';
       }, 300);
     });
+  }
+
+  // Disclosure: collapse social profiles behind one button (WAI-ARIA disclosure).
+  var disc = document.getElementById('socials-btn');
+  var socialsList = document.getElementById('socials-list');
+  if (disc && socialsList) {
+    function collapseSocials() {
+      disc.setAttribute('aria-expanded', 'false');
+      socialsList.hidden = true;
+      disc.focus();
+    }
+    disc.addEventListener('click', function () {
+      var open = disc.getAttribute('aria-expanded') === 'true';
+      disc.setAttribute('aria-expanded', String(!open));
+      socialsList.hidden = open;
+      if (open) disc.focus(); // collapsing: never orphan focus on a now-hidden link
+    });
+    // Escape collapses and returns focus to the toggle — works whether focus is
+    // on the button or on a submenu link (WCAG 2.1.1). Bound to both because the
+    // button and list are siblings, so a keydown on the button never bubbles to the list.
+    function onEsc(e) {
+      if (e.key === 'Escape' && disc.getAttribute('aria-expanded') === 'true') collapseSocials();
+    }
+    disc.addEventListener('keydown', onEsc);
+    socialsList.addEventListener('keydown', onEsc);
   }
 </script>
 <!-- Privacy-friendly analytics (GoatCounter, no cookies) -->
